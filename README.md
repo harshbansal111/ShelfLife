@@ -77,7 +77,7 @@ Every LLM call goes through the **Bifrost** gateway, which provides model tierin
 ## See it working
 
 - **Without any keys:** set `DEMO_MODE=true` (see [Installation](#installation)). Every page runs on a built-in simulator of Bifrost, Tavily and the web with invented companies and prices, and the web app starts an **automatic guided walkthrough** that drives every feature and explains each one beside it on screen. Replay it from the button in the bottom corner.
-- **Demo video:** a timed transcript and subtitles are in [docs/demo-video/](docs/demo-video/).
+- **Demo video:** https://drive.google.com/file/d/1IjoK1Dpbzs_ctv8-igraNcYtRy-7gDXO/view?usp=sharing
 - **Feature-by-feature guide:** [docs/testing.md](docs/testing.md). **Three-minute run-sheet:** [docs/demo.md](docs/demo.md).
 
 ## Features
