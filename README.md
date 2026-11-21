@@ -28,8 +28,7 @@
 14. [Testing and evaluation](#testing-and-evaluation)
 15. [Project structure](#project-structure)
 16. [Safeguards](#safeguards)
-17. [Known limits](#known-limits)
-18. [Future scope](#future-scope)
+17. [Future scope](#future-scope)
 
 ---
 Deployment Link- https://shelflife-final-web.onrender.com
@@ -650,16 +649,6 @@ docker-compose.yml        Bifrost and Redis
 - **Old values come from the claim.** A "stated value" is only accepted if it appears in the claim's own text.
 - **Bounded spending.** A budgeted Bifrost key, a claim cap per answer, a check budget per Autopilot cycle, and a search cache.
 - **Safe link checks.** Only public web addresses are fetched.
-
-## Known limits
-
-- A check still running when the backend restarts is lost (finished checks are saved). Don't run the backend with `--reload` during a demo.
-- If Bifrost doesn't report a cost and the model isn't in `PRICE_TABLE` in `config.py`, the cost is shown as unknown rather than $0.
-- Re-check dates assume no new evidence appears: they say when to look again, not when a claim becomes wrong.
-- Data is stored locally in SQLite, for one user.
-- Batch progress is kept in memory.
-- Autopilot runs inside the backend process, so it stops when the backend stops.
-- Simulated mode's data is invented. It shows how features behave, not anything about the real world.
 
 ## Future scope
 
